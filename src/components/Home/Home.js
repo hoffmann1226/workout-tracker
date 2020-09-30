@@ -39,7 +39,12 @@ goNext =() => this.props.history.push('/Understanding')
     return (
       
       <div>
-      <h3>Which workout are you doing today?</h3>
+      <h3>Which P90X workout are you doing today?</h3>
+      <button>Chest and Back</button>
+      <br/>
+      <button>Shoulders Biceps and Triceps</button>
+      <br/>
+      <button>Legs and Back</button>
       </div>
     );
   }
