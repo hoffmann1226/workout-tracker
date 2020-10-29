@@ -9,7 +9,6 @@ class Home extends Component {
 goChest =() => this.props.history.push('/Chest')
 goShoulders = () => this.props.history.push('/Shoulders')
 
-//use a drop down select panel with an onChange to trigger changeState to capture value
   render() {
     return (
       
@@ -24,7 +23,7 @@ goShoulders = () => this.props.history.push('/Shoulders')
     );
   }
 }
-//because the component uses redux, we need this code at the bottom
+
 const putReduxStateOnProps=(reduxState)=>{
   return reduxState;
 }
