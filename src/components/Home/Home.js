@@ -4,27 +4,10 @@ import {connect} from 'react-redux';
 
 class Home extends Component {
 
-//use local state 
-state = {
-  feeling: '',
-}
-
-  //require the user to enter an answer
-  submitInput = (event) => {
-    event.preventDefault();
-    if (this.state.feeling === ''){
-     alert('You must choose an answer!')   
-    } 
-//once an answer is provided, local state is dispatched to the setFeeling reducer in index.js    
-    else {
-    console.log(this.state.feeling)
-    this.props.dispatch({type: 'SET_FEELING', payload: this.state.feeling})
-    this.goNext();
-  }
-}
 
 //props.history takes user to next page
-goNext =() => this.props.history.push('/Understanding')
+goChest =() => this.props.history.push('/Chest')
+goShoulders = () => this.props.history.push('/Shoulders')
 
 //use a drop down select panel with an onChange to trigger changeState to capture value
   render() {
