@@ -9,14 +9,6 @@ state = {
   feeling: '',
 }
 
-//capture feeling value using local state
-changeState = (event) => {
-  console.log("in changeState")
-    this.setState({
-        feeling: event.target.value,
-    })
-  }
-
   //require the user to enter an answer
   submitInput = (event) => {
     event.preventDefault();
