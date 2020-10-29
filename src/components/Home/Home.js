@@ -15,7 +15,7 @@ goShoulders = () => this.props.history.push('/Shoulders')
       
       <div>
       <h3>Which P90X workout are you doing today?</h3>
-      <button>Chest and Back</button>
+      <button onClick={this.goChest}>Chest and Back</button>
       <br/>
       <button>Shoulders Biceps and Triceps</button>
       <br/>

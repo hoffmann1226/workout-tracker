@@ -3,7 +3,8 @@ import axios from 'axios';
 import './App.css';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import {connect} from 'react-redux';
-import Home from './../Home/Home'
+import Home from './../Home/Home';
+import Chest from './../Chest/Chest';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         </header>
         <br/>
         <Route exact path="/" component={Home}/>
+        <Route exact path="/Chest" componeent={Chest}/>
         
       </div>
       </Router>
