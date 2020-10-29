@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 //import connect for use of redux
 import {connect} from 'react-redux';
 
-class Chest extends Component {
+class Shoulders extends Component {
 
 
 
@@ -12,7 +12,7 @@ goHome =() => this.props.history.push('/')
     return (
       
       <div>
-    <h3>Chest and Back</h3>
+    <h3>Shoulders Triceps Biceps</h3>
       <button onClick={this.goHome}>Go Back to Home</button>
       </div>
     );
@@ -23,4 +23,4 @@ const putReduxStateOnProps=(reduxState)=>{
   return reduxState;
 }
 
-export default connect(putReduxStateOnProps)(Chest);
+export default connect(putReduxStateOnProps)(Shoulders);

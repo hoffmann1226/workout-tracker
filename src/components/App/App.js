@@ -5,6 +5,7 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import {connect} from 'react-redux';
 import Home from './../Home/Home';
 import Chest from './../Chest/Chest';
+import Shoulders from './../Shoulders/Shoulders';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <br/>
         <Route exact path="/" component={Home}/>
         <Route exact path="/Chest" component={Chest}/>
+        <Route exact path="/Shoulders" component={Shoulders}/>
         
       </div>
       </Router>
