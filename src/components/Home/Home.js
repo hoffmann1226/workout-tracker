@@ -6,8 +6,9 @@ class Home extends Component {
 
 
 //props.history takes user to next page
-goChest =() => this.props.history.push('/Chest')
-goShoulders = () => this.props.history.push('/Shoulders')
+goChest =() => this.props.history.push('/Chest');
+goShoulders = () => this.props.history.push('/Shoulders');
+goLegs = () => this.props.history.push('/Legs');
 
   render() {
     return (
@@ -18,7 +19,7 @@ goShoulders = () => this.props.history.push('/Shoulders')
       <br/>
       <button onClick={this.goShoulders}>Shoulders Biceps and Triceps</button>
       <br/>
-      <button>Legs and Back</button>
+      <button onClick={this.goLegs} >Legs and Back</button>
       </div>
     );
   }
