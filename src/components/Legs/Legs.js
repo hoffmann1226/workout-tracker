@@ -12,7 +12,7 @@ goHome =() => this.props.history.push('/')
     return (
       
       <div>
-    <h3>Legs and Back</h3>
+      <h3>Legs and Back</h3>
       <button onClick={this.goHome}>Go Back to Home</button>
       </div>
     );
