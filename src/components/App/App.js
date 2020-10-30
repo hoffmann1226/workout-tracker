@@ -6,6 +6,7 @@ import {connect} from 'react-redux';
 import Home from './../Home/Home';
 import Chest from './../Chest/Chest';
 import Shoulders from './../Shoulders/Shoulders';
+import Legs from './../Legs/Legs';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
         <Route exact path="/" component={Home}/>
         <Route exact path="/Chest" component={Chest}/>
         <Route exact path="/Shoulders" component={Shoulders}/>
+        <Route exact path="/Legs" component={Legs}/>
         
       </div>
       </Router>
