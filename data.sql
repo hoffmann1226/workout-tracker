@@ -1,16 +1,13 @@
 -- Database should be prime_feedback
-CREATE DATABASE "prime_feedback";
+CREATE DATABASE "workout";
 
 -- Switch to "prime_feedback" before making:
 -- Table to store the feedback
-CREATE TABLE "feedback" (
+CREATE TABLE "chest" (
   "id" serial primary key,
-  "feeling" INT not null,
-  "understanding" INT not null,
-  "support" INT not null,
-  "comments" text,
-  "flagged" boolean default false,
-  "date" date not null default CURRENT_DATE
+  "exercise" text,
+  "reps" text,
+  "weight" text
 ); 
 
 -- Sample feedback item

@@ -26,6 +26,9 @@ goHome =() => this.props.history.push('/')
                 <TableCell>Weight</TableCell>
             </TableRow>
         </TableHead>
+        <TableBody>
+            
+        </TableBody>
     </Table>
       <button onClick={this.goHome}>Go Back to Home</button>
       </div>
