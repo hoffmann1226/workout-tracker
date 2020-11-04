@@ -26,7 +26,10 @@ goHome =() => this.props.history.push('/')
                 <TableCell>Weight</TableCell>
             </TableRow>
         </TableHead>
-        <TableBody>       
+        <TableBody>  
+               {/* {this.props.reduxState.legs.map((item, index) => (
+                <ExerciseItem key={index} item={item}/>
+            ))} */}     
         </TableBody>
     </Table>
       <button onClick={this.goHome}>Go Back to Home</button>
