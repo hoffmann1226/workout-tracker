@@ -18,6 +18,17 @@ goHome =() => this.props.history.push('/')
       
       <div>
       <h3>Legs and Back</h3>
+      <Table>
+        <TableHead>
+            <TableRow>
+                <TableCell>Exercise</TableCell>
+                <TableCell>Reps</TableCell>
+                <TableCell>Weight</TableCell>
+            </TableRow>
+        </TableHead>
+        <TableBody>       
+        </TableBody>
+    </Table>
       <button onClick={this.goHome}>Go Back to Home</button>
       </div>
     );
