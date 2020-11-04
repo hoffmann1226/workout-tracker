@@ -6,6 +6,7 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import ExerciseItem from './../ExerciseItem/ExerciseItem'
 
 class Chest extends Component {
 
@@ -27,7 +28,9 @@ goHome =() => this.props.history.push('/')
             </TableRow>
         </TableHead>
         <TableBody>
-            
+               {/* {this.props.reduxState.chest.map((item, index) => (
+                <ExerciseItem key={index} item={item}/>
+            ))} */}
         </TableBody>
     </Table>
       <button onClick={this.goHome}>Go Back to Home</button>
