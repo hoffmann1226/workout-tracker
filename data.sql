@@ -26,4 +26,6 @@ CREATE TABLE "legs" (
 
 -- Sample feedback item
 INSERT INTO "chest" ("exercise", "reps", "weight")
-VALUES ('Standard Push-Ups', 4, 5, 'Doing Great!');
+VALUES 
+  ('Standard Push-Ups', 0, 0),
+
