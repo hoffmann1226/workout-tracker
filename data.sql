@@ -24,7 +24,7 @@ CREATE TABLE "legs" (
   "weight" int
 ); 
 
--- Sample feedback item
+
 INSERT INTO "chest" ("exercise", "reps", "weight")
 VALUES 
   ('Standard Push-Ups', 0, 0),
@@ -32,12 +32,13 @@ VALUES
   ('Military Push-Ups', 0, 0),
   ('Reverse Grip Chin Ups', 0, 0),
   ('Water Break', 0, 0),
-  ('Standard Push-Ups', 0, 0),
-  ('Standard Push-Ups', 0, 0),
-  ('Standard Push-Ups', 0, 0),
-  ('Standard Push-Ups', 0, 0),
-  ('Standard Push-Ups', 0, 0),
-  ('Standard Push-Ups', 0, 0),
-  ('Standard Push-Ups', 0, 0),
-  ('Standard Push-Ups', 0, 0),
+  ('Wide Fly Push-Ups', 0, 0),
+  ('Closed Grip Overhand Pull-Ups', 0, 0),
+  ('Decline Push-Ups', 0, 0),
+  ('Heavy Pants', 0, 0),
+  ('Water Break', 0, 0),
+  ('Diamond Push-Ups', 0, 0),
+  ('Lawnmowers', 0, 0),
+  ('Dive-Bomber Push-Ups', 0, 0),
+  ('Back Flys', 0, 0);
 
