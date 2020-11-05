@@ -6,24 +6,24 @@ CREATE DATABASE "workout";
 CREATE TABLE "chest" (
   "id" serial primary key,
   "exercise" text,
-  "reps" text,
-  "weight" text
+  "reps" int,
+  "weight" int
 ); 
 
 CREATE TABLE "shoulders" (
   "id" serial primary key,
-  "exercise" text,
-  "reps" text,
-  "weight" text
+  "exercise" int,
+  "reps" int,
+  "weight" int
 ); 
 
 CREATE TABLE "legs" (
   "id" serial primary key,
   "exercise" text,
-  "reps" text,
-  "weight" text
+  "reps" int,
+  "weight" int
 ); 
 
 -- Sample feedback item
-INSERT INTO "feedback" ("feeling", "understanding", "support", "comments")
-VALUES (4, 4, 5, 'Doing Great!');
+INSERT INTO "chest" ("exercise", "reps", "weight")
+VALUES ('Standard Push-Ups', 4, 5, 'Doing Great!');
