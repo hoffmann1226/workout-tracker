@@ -28,4 +28,16 @@ CREATE TABLE "legs" (
 INSERT INTO "chest" ("exercise", "reps", "weight")
 VALUES 
   ('Standard Push-Ups', 0, 0),
+  ('Wide Front Pull-Ups', 0, 0),
+  ('Military Push-Ups', 0, 0),
+  ('Reverse Grip Chin Ups', 0, 0),
+  ('Water Break', 0, 0),
+  ('Standard Push-Ups', 0, 0),
+  ('Standard Push-Ups', 0, 0),
+  ('Standard Push-Ups', 0, 0),
+  ('Standard Push-Ups', 0, 0),
+  ('Standard Push-Ups', 0, 0),
+  ('Standard Push-Ups', 0, 0),
+  ('Standard Push-Ups', 0, 0),
+  ('Standard Push-Ups', 0, 0),
 
