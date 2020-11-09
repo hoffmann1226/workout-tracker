@@ -12,7 +12,7 @@ import axios from 'axios';
 
 function* rootSaga(){
   yield takeEvery('GET_CHEST', getChest)
-}
+};
 
 function* getChest (){
   try{
@@ -26,6 +26,8 @@ function* getChest (){
     console.log('problem with get chest saga', error)
   }
 }
+
+const sagaMiddleware = createSagaMiddleware();
 
 const chestReducer = (state = [], action) => {
   switch (action.type) {

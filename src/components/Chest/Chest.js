@@ -6,11 +6,14 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import {withRouter} from 'react-router-dom';
 import ExerciseItem from './../ExerciseItem/ExerciseItem'
 
 class Chest extends Component {
 
-
+componentDidMount(){
+    this.props.dispatch({type: 'GET_CHEST'})
+}
 
 goHome =() => this.props.history.push('/')
 
@@ -28,7 +31,7 @@ goHome =() => this.props.history.push('/')
             </TableRow>
         </TableHead>
         <TableBody>
-               {/* {this.props.reduxState.chest.map((item, index) => (
+               {/* {this.props.reduxState.chestReducer.map((item, index) => (
                 <ExerciseItem key={index} item={item}/>
             ))} */}
         </TableBody>
@@ -43,4 +46,4 @@ const putReduxStateOnProps=(reduxState)=>{
   return reduxState;
 }
 
-export default connect(putReduxStateOnProps)(Chest);
+export default withRouter(connect(putReduxStateOnProps)(Chest));
