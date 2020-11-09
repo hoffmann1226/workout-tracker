@@ -31,7 +31,8 @@ goHome =() => this.props.history.push('/')
             </TableRow>
         </TableHead>
         <TableBody>
-               {/* {this.props.reduxState.chestReducer.map((item, index) => (
+            {JSON.stringify(this.props.chestReducer)}
+               {/* {this.props.chestReducer.map((item, index) => (
                 <ExerciseItem key={index} item={item}/>
             ))} */}
         </TableBody>
