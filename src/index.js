@@ -43,8 +43,10 @@ const storeInstance = createStore(
     combineReducers({
       chestReducer
     }),
-    applyMiddleware(logger)
+    applyMiddleware(sagaMiddleware, logger)
   );
 
+  sagaMiddleware.run(rootSaga);
+  
   ReactDOM.render(<Provider store={storeInstance}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();
