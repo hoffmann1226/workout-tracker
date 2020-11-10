@@ -31,10 +31,9 @@ goHome =() => this.props.history.push('/')
             </TableRow>
         </TableHead>
         <TableBody>
-            {JSON.stringify(this.props.chestReducer)}
-               {/* {this.props.chestReducer.map((item, index) => (
+               {this.props.chestReducer.map((item, index) => (
                 <ExerciseItem key={index} item={item}/>
-            ))} */}
+            ))}
         </TableBody>
     </Table>
       <button onClick={this.goHome}>Go Back to Home</button>
