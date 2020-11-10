@@ -15,6 +15,8 @@ class ExerciseItem extends Component {
     return (
       <TableRow key={this.props.item.id}>
         <TableCell> {this.props.item.exercise}</TableCell>
+        <TableCell> {this.props.item.reps}</TableCell>
+        <TableCell> {this.props.item.weight}</TableCell>
       </TableRow>
     );
   }
