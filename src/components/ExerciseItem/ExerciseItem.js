@@ -13,7 +13,8 @@ class ExerciseItem extends Component {
 
   render() {
     return (
-      <TableRow>
+      <TableRow key={this.props.item.id}>
+        <TableCell> {this.props.item.exercise}</TableCell>
       </TableRow>
     );
   }
