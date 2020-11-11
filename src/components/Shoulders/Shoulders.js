@@ -6,7 +6,8 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import ExerciseItem from './../ExerciseItem/ExerciseItem'
+import ExerciseItem from './../ExerciseItem/ExerciseItem';
+import Button from '@material-ui/core/Button';
 
 class Shoulders extends Component {
 
@@ -30,12 +31,13 @@ goHome =() => this.props.history.push('/')
             </TableRow>
         </TableHead>
         <TableBody>  
-            {/* {this.props.reduxState.shoulders.map((item, index) => (
+            {this.props.shouldersReducer.map((item, index) => (
                 <ExerciseItem key={index} item={item}/>
-            ))} */}
+            ))}
         </TableBody>
     </Table>
-      <button onClick={this.goHome}>Go Back to Home</button>
+    <br/>
+      <Button color="primary" variant="contained" onClick={this.goHome}>Go Back to Home</Button>
       </div>
     );
   }
