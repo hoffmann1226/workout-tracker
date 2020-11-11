@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 5000;
 
 const chestRouter = require('./routes/chest.router');
+const shouldersRouter = require('./routes/shoulders.router');
 
 /** ---------- MIDDLEWARE ---------- **/
 app.use(bodyParser.json()); // needed for angular requests
@@ -13,6 +14,7 @@ app.use(express.static('build'));
 /** ---------- EXPRESS ROUTES ---------- **/
 
 app.use('/chest', chestRouter);
+app.use('/shoulders', shouldersRouter);
 
 /** ---------- START SERVER ---------- **/
 app.listen(PORT, () => {

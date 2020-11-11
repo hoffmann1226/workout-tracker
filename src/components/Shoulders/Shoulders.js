@@ -10,7 +10,9 @@ import ExerciseItem from './../ExerciseItem/ExerciseItem'
 
 class Shoulders extends Component {
 
-
+componentDidMount(){
+  this.props.dispatch({type: 'GET_SHOULDERS'})
+}
 
 goHome =() => this.props.history.push('/')
 
