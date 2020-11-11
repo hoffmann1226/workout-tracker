@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 //import connect for use of redux
 import {connect} from 'react-redux';
+import Button from '@material-ui/core/Button';
+
 
 class Home extends Component {
 
@@ -15,11 +17,11 @@ goLegs = () => this.props.history.push('/Legs');
       
       <div>
       <h3>Which P90X workout are you doing today?</h3>
-      <button onClick={this.goChest}>Chest and Back</button>
+      <Button onClick={this.goChest}>Chest and Back</Button>
       <br/>
-      <button onClick={this.goShoulders}>Shoulders Biceps and Triceps</button>
+      <Button onClick={this.goShoulders}>Shoulders Biceps and Triceps</Button>
       <br/>
-      <button onClick={this.goLegs} >Legs and Back</button>
+      <Button onClick={this.goLegs} >Legs and Back</Button>
       </div>
     );
   }
