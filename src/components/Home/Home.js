@@ -17,11 +17,13 @@ goLegs = () => this.props.history.push('/Legs');
       
       <div>
       <h3>Which P90X workout are you doing today?</h3>
-      <Button onClick={this.goChest}>Chest and Back</Button>
+      <Button color="primary" variant="contained" onClick={this.goChest}>Chest and Back</Button>
       <br/>
-      <Button onClick={this.goShoulders}>Shoulders Biceps and Triceps</Button>
       <br/>
-      <Button onClick={this.goLegs} >Legs and Back</Button>
+      <Button color="primary" variant="contained" onClick={this.goShoulders}>Shoulders Biceps and Triceps</Button>
+      <br/>
+      <br/>
+      <Button color="primary" variant="contained" onClick={this.goLegs} >Legs and Back</Button>
       </div>
     );
   }
