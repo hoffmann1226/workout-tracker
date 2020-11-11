@@ -12,7 +12,7 @@ CREATE TABLE "chest" (
 
 CREATE TABLE "shoulders" (
   "id" serial primary key,
-  "exercise" int,
+  "exercise" text,
   "reps" int,
   "weight" int
 ); 
@@ -60,25 +60,25 @@ VALUES
   ('Water Break', 0, 0),
   ('Upright Rows', 0, 0),
   ('Static Arm Curls', 0, 0),
-  ('Flip Grip Tricep Kickbacks', 0, 0);
+  ('Flip Grip Tricep Kickbacks', 0, 0),
    ('Upright Rows', 0, 0),
   ('Static Arm Curls', 0, 0),
-  ('Flip Grip Tricep Kickbacks', 0, 0);
+  ('Flip Grip Tricep Kickbacks', 0, 0),
    ('Water Break', 0, 0),
   ('Seater Two-Angle Shoulder Flys', 0, 0),
-  ('Crouching Cohen Curls', 0, 0);
+  ('Crouching Cohen Curls', 0, 0),
    ('Lying-Down Triceps Extensions', 0, 0),
   ('Seater Two-Angle Shoulder Flys', 0, 0),
-  ('Crouching Cohen Curls', 0, 0);
+  ('Crouching Cohen Curls', 0, 0),
    ('Lying-Down Triceps Extensions', 0, 0),
   ('Water Break', 0, 0),
-  ('In and Out Straight Arm Shoulder Flys', 0, 0)
+  ('In and Out Straight Arm Shoulder Flys', 0, 0),
    ('Congdon Curls', 0, 0),
-  ('Side Tri-Rises', 0, 0)
-  ('In and Out Straight Arm Shoulder Flys', 0, 0)
+  ('Side Tri-Rises', 0, 0),
+  ('In and Out Straight Arm Shoulder Flys', 0, 0),
    ('Congdon Curls', 0, 0),
   ('Side Tri-Rises', 0, 0);
-
+  
 INSERT INTO "legs" ("exercise", "reps", "weight")
 VALUES 
   ('Balanced Lunges', 0, 0),
