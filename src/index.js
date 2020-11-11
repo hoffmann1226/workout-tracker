@@ -12,6 +12,7 @@ import axios from 'axios';
 
 function* rootSaga(){
   yield takeEvery('GET_CHEST', getChest)
+  yield takeEvery('GET_SHOULDERS', getShoulders)
 };
 
 function* getChest (){
@@ -20,6 +21,19 @@ function* getChest (){
     console.log('in get chest saga', response.data)
     yield put({
       type: 'SET_CHEST',
+      payload: response.data
+    })
+  } catch(error){
+    console.log('problem with get chest saga', error)
+  }
+}
+
+function* getShoulders (){
+  try{
+    let response = yield axios.get(`/shoulders`)
+    console.log('in get shoulders saga', response.data)
+    yield put ({
+      type: 'SET_SHOULDERS',
       payload: response.data
     })
   } catch(error){
@@ -38,10 +52,20 @@ const chestReducer = (state = [], action) => {
   }
 }
 
+const shouldersReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'SET_SHOULDERS':
+      return action.payload;
+    default:
+      return state;
+  }
+}
+
 //store instance and combine reducers
 const storeInstance = createStore(
     combineReducers({
-      chestReducer
+      chestReducer,
+      shouldersReducer
     }),
     applyMiddleware(sagaMiddleware, logger)
   );
