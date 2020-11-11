@@ -8,6 +8,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import {withRouter} from 'react-router-dom';
 import ExerciseItem from './../ExerciseItem/ExerciseItem'
+import Button from '@material-ui/core/Button';
 
 class Chest extends Component {
 
@@ -36,7 +37,7 @@ goHome =() => this.props.history.push('/')
             ))}
         </TableBody>
     </Table>
-      <button onClick={this.goHome}>Go Back to Home</button>
+      <Button color="primary" variant="contained" onClick={this.goHome}>Go Back to Home</Button>
       </div>
     );
   }
