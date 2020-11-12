@@ -13,6 +13,7 @@ import axios from 'axios';
 function* rootSaga(){
   yield takeEvery('GET_CHEST', getChest)
   yield takeEvery('GET_SHOULDERS', getShoulders)
+  yield takeEvery('GET_LEGS', getLegs)
 };
 
 function* getChest (){
@@ -34,6 +35,19 @@ function* getShoulders (){
     console.log('in get shoulders saga', response.data)
     yield put ({
       type: 'SET_SHOULDERS',
+      payload: response.data
+    })
+  } catch(error){
+    console.log('problem with get shoulders saga', error)
+  }
+}
+
+function* getLegs(){
+  try{
+    let response = yield axios.get(`/legs`)
+    console.log('in get legs saga', response.data)
+    yield put ({
+      type: 'SET_LEGS',
       payload: response.data
     })
   } catch(error){
