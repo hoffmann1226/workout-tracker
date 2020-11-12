@@ -7,6 +7,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import ExerciseItem from './../ExerciseItem/ExerciseItem'
+import Button from '@material-ui/core/Button';
 
 class Legs extends Component {
 
@@ -33,7 +34,7 @@ goHome =() => this.props.history.push('/')
             ))} */}     
         </TableBody>
     </Table>
-      <button onClick={this.goHome}>Go Back to Home</button>
+      <Button onClick={this.goHome}>Go Back to Home</Button>
       </div>
     );
   }
