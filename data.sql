@@ -78,7 +78,7 @@ VALUES
   ('In and Out Straight Arm Shoulder Flys', 0, 0),
    ('Congdon Curls', 0, 0),
   ('Side Tri-Rises', 0, 0);
-  
+
 INSERT INTO "legs" ("exercise", "reps", "weight")
 VALUES 
   ('Balanced Lunges', 0, 0),
@@ -97,13 +97,13 @@ VALUES
   ('Sneaky Lunge', 0, 0),
   ('Reverse Grip Chin-Ups', 0, 0),
   ('Chair Salutations', 0, 0),
-  ('Toe Roll Iso Lunge', 0, 0);
+  ('Toe Roll Iso Lunge', 0, 0),
    ('Wide Front Pull-Ups', 0, 0),
   ('Groucho Walk', 0, 0),
-  ('Calf Raises Toes Out', 0, 0);
+  ('Calf Raises Toes Out', 0, 0),
    ('Calf Raises Parallel', 0, 0),
   ('Calf Raises In', 0, 0),
-  ('Closed Grip Overhand Pull-Ups', 0, 0);
+  ('Closed Grip Overhand Pull-Ups', 0, 0),
    ('80/20 Siebers-Speed Squats', 0, 0),
   ('Switch Grip Pull Ups', 0, 0);
   
