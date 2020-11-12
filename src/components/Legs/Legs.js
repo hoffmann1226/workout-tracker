@@ -11,7 +11,9 @@ import Button from '@material-ui/core/Button';
 
 class Legs extends Component {
 
-
+componentDidMount(){
+  this.props.dispatch({type:'GET_LEGS'})
+}
 
 goHome =() => this.props.history.push('/')
 

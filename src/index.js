@@ -51,7 +51,7 @@ function* getLegs(){
       payload: response.data
     })
   } catch(error){
-    console.log('problem with get shoulders saga', error)
+    console.log('problem with get legs saga', error)
   }
 }
 
