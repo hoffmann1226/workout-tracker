@@ -31,12 +31,12 @@ goHome =() => this.props.history.push('/')
             </TableRow>
         </TableHead>
         <TableBody>  
-               {/* {this.props.reduxState.legs.map((item, index) => (
+               {this.props.legsReducer.map((item, index) => (
                 <ExerciseItem key={index} item={item}/>
-            ))} */}     
+            ))}
         </TableBody>
     </Table>
-      <Button onClick={this.goHome}>Go Back to Home</Button>
+      <Button color="primary" variant="contained" onClick={this.goHome}>Go Back to Home</Button>
       </div>
     );
   }
