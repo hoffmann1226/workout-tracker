@@ -7,6 +7,7 @@ import Home from './../Home/Home';
 import Chest from './../Chest/Chest';
 import Shoulders from './../Shoulders/Shoulders';
 import Legs from './../Legs/Legs';
+import Core from './../Core/Core';
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
         <Route exact path="/Chest" component={Chest}/>
         <Route exact path="/Shoulders" component={Shoulders}/>
         <Route exact path="/Legs" component={Legs}/>
+        <Route exact path="/Core" component={Core}/>
         
       </div>
       </Router>
