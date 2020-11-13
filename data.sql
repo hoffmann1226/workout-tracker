@@ -24,6 +24,13 @@ CREATE TABLE "legs" (
   "weight" int
 ); 
 
+CREATE TABLE "core" (
+  "id" serial primary key,
+  "exercise" text,
+  "reps" int,
+  "weight" int
+); 
+
 
 INSERT INTO "chest" ("exercise", "reps", "weight")
 VALUES 
@@ -106,4 +113,31 @@ VALUES
   ('Closed Grip Overhand Pull-Ups', 0, 0),
    ('80/20 Siebers-Speed Squats', 0, 0),
   ('Switch Grip Pull Ups', 0, 0);
+  
+  INSERT INTO "core" ("exercise", "reps", "weight")
+VALUES 
+  ('Stacked foot staggered hand push ups', 0, 0),
+  ('Banana Rolls', 0, 0),
+  ('Leaning Crescent Lunges', 0, 0),
+  ('Squat Runs', 0, 0),
+  ('Sphinx push ups', 0, 0),
+  ('Bow to Boat', 0, 0),
+  ('Low Lateral Skaters', 0, 0),
+  ('Lunge & Reach', 0, 0),
+  ('Water Break', 0, 0),
+  ('Prison Cell Push-Ups', 0, 0),
+  ('Side Hip Raise', 0, 0),
+  ('Squat X Press', 0, 0),
+  ('Plank to Chataranga Run', 0, 0),
+  ('Walking Push-Ups', 0, 0),
+  ('Superman Banana', 0, 0),
+  ('Lunge Kickback Curl Press', 0, 0),
+  ('Towel Hoppers', 0, 0),
+   ('Water Break', 0, 0),
+  ('Reach High and Under Push Ups', 0, 0),
+  ('Steam Engine', 0, 0),
+   ('Dreya Rolls', 0, 0),
+  ('Plank to Chataranga Iso', 0, 0),
+  ('Halfback', 0, 0),
+   ('Table Dip Leg Raises', 0, 0);
   
