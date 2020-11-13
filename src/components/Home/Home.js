@@ -11,6 +11,7 @@ class Home extends Component {
 goChest =() => this.props.history.push('/Chest');
 goShoulders = () => this.props.history.push('/Shoulders');
 goLegs = () => this.props.history.push('/Legs');
+goCore = () => this.props.history.push('/Core');
 
   render() {
     return (
@@ -24,6 +25,9 @@ goLegs = () => this.props.history.push('/Legs');
       <br/>
       <br/>
       <Button color="primary" variant="contained" onClick={this.goLegs} >Legs and Back</Button>
+      <br/>
+      <br/>
+      <Button color="primary" variant="contained" onClick={this.goCore} >Core Synergistics</Button>
       </div>
     );
   }
