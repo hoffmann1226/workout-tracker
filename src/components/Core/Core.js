@@ -13,7 +13,7 @@ import Button from '@material-ui/core/Button';
 class Core extends Component {
 
 componentDidMount(){
-    this.props.dispatch({type: 'GET_CHEST'})
+    this.props.dispatch({type: 'GET_CORE'})
 }
 
 goHome =() => this.props.history.push('/')
@@ -22,7 +22,7 @@ goHome =() => this.props.history.push('/')
     return (
       
       <div>
-    <h3>Chest and Back</h3>
+    <h3>Core Synergistics</h3>
     <Table>
         <TableHead>
             <TableRow>
@@ -32,9 +32,9 @@ goHome =() => this.props.history.push('/')
             </TableRow>
         </TableHead>
         <TableBody>
-               {/* {this.props.coreReducer.map((item, index) => (
+               {this.props.coreReducer.map((item, index) => (
                 <ExerciseItem key={index} item={item}/>
-            ))} */}
+            ))}
         </TableBody>
     </Table>
       <Button color="primary" variant="contained" onClick={this.goHome}>Go Back to Home</Button>

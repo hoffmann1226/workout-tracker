@@ -5,7 +5,8 @@ const PORT = process.env.PORT || 5000;
 
 const chestRouter = require('./routes/chest.router');
 const shouldersRouter = require('./routes/shoulders.router');
-const legsRouter = require('./routes/legs.router')
+const legsRouter = require('./routes/legs.router');
+const coreRouter = require('./routes/core.router')
 
 /** ---------- MIDDLEWARE ---------- **/
 app.use(bodyParser.json()); // needed for angular requests
@@ -16,7 +17,8 @@ app.use(express.static('build'));
 
 app.use('/chest', chestRouter);
 app.use('/shoulders', shouldersRouter);
-app.use('/legs', legsRouter)
+app.use('/legs', legsRouter);
+app.use ('/core', coreRouter);
 
 /** ---------- START SERVER ---------- **/
 app.listen(PORT, () => {

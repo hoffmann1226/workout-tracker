@@ -14,7 +14,7 @@ function* rootSaga(){
   yield takeEvery('GET_CHEST', getChest)
   yield takeEvery('GET_SHOULDERS', getShoulders)
   yield takeEvery('GET_LEGS', getLegs)
-  yield takeEvery('GET CORE', getCore)
+  yield takeEvery('GET_CORE', getCore)
 };
 
 function* getChest (){
