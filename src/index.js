@@ -98,12 +98,22 @@ const legsReducer = (state = [], action) => {
   }
 }
 
+const coreReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'SET_CORE':
+      return action.payload;
+      default:
+        return state
+  }
+}
+
 //store instance and combine reducers
 const storeInstance = createStore(
     combineReducers({
       chestReducer,
       shouldersReducer,
-      legsReducer
+      legsReducer,
+      coreReducer
     }),
     applyMiddleware(sagaMiddleware, logger)
   );
