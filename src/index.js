@@ -14,6 +14,7 @@ function* rootSaga(){
   yield takeEvery('GET_CHEST', getChest)
   yield takeEvery('GET_SHOULDERS', getShoulders)
   yield takeEvery('GET_LEGS', getLegs)
+  yield takeEvery('GET CORE', getCore)
 };
 
 function* getChest (){
@@ -52,6 +53,19 @@ function* getLegs(){
     })
   } catch(error){
     console.log('problem with get legs saga', error)
+  }
+}
+
+function* getCore(){
+  try{
+    let response = yield axios.get(`/core`)
+    console.log('in get core saga', response.data)
+    yield put ({
+      type: 'SET_CORE',
+      payload: response.data
+    })
+  } catch(error){
+    console.log('problem with get core saga', error)
   }
 }
 
