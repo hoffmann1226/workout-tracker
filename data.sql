@@ -31,6 +31,12 @@ CREATE TABLE "core" (
   "weight" int
 ); 
 
+CREATE TABLE "chest_shoulders_triceps" (
+  "id" serial primary key,
+  "exercise" text,
+  "reps" int,
+  "weight" int
+);
 
 INSERT INTO "chest" ("exercise", "reps", "weight")
 VALUES 
