@@ -147,3 +147,30 @@ VALUES
   ('Halfback', 0, 0),
    ('Table Dip Leg Raises', 0, 0);
   
+  INSERT INTO "chest_shoulders_triceps" ("exercise", "reps", "weight")
+VALUES 
+  ('Slow motion 3 in 1 pushup', 0, 0),
+  ('In and Out Shoulder Flies', 0, 0),
+  ('Chair Dips', 0, 0),
+  ('Plange Push-ups', 0, 0),
+  ('Pike Presses', 0, 0),
+  ('Side Tri-Rises', 0, 0),
+  ('Floor Flys', 0, 0),
+  ('Scarecrows', 0, 0),
+  ('Overhead Triceps Extensions', 0, 0),
+  ('Two-Twitch Speed Push-ups', 0, 0),
+  ('Y-Presses', 0, 0),
+  ('Lying Triceps Extensions', 0, 0),
+  ('Water BReak', 0, 0),
+  ('Side to side push-ups', 0, 0),
+  ('Pour Flys', 0, 0),
+  ('Side-Leaning Triceps Extensions', 0, 0),
+  ('One-Arm push-ups', 0, 0),
+   ('Weighted Circles', 0, 0),
+  ('Throw the bomb', 0, 0),
+  ('Clap or plyo push-ups', 0, 0),
+   ('slow-mo throws', 0, 0),
+  ('Front to back tricep extensions', 0, 0),
+  ('One-Arm balance push-ups', 0, 0),
+   ('Fly-row-presses', 0, 0),
+   ('Dumbbell Cross-Body Blows', 0, 0);
