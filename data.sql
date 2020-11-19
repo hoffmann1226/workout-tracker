@@ -31,7 +31,7 @@ CREATE TABLE "core" (
   "weight" int
 ); 
 
-CREATE TABLE "chest_shoulders_triceps" (
+CREATE TABLE "cst" (
   "id" serial primary key,
   "exercise" text,
   "reps" int,
@@ -147,7 +147,7 @@ VALUES
   ('Halfback', 0, 0),
    ('Table Dip Leg Raises', 0, 0);
   
-  INSERT INTO "chest_shoulders_triceps" ("exercise", "reps", "weight")
+  INSERT INTO "cst" ("exercise", "reps", "weight")
 VALUES 
   ('Slow motion 3 in 1 pushup', 0, 0),
   ('In and Out Shoulder Flies', 0, 0),
