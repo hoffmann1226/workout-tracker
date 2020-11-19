@@ -21,7 +21,7 @@ class Cst extends Component {
         return (
           
           <div>
-        <h3>Chest and Back</h3>
+        <h3>Chest Shoulders Triceps</h3>
         <Table>
             <TableHead>
                 <TableRow>
