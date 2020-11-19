@@ -12,6 +12,7 @@ goChest =() => this.props.history.push('/Chest');
 goShoulders = () => this.props.history.push('/Shoulders');
 goLegs = () => this.props.history.push('/Legs');
 goCore = () => this.props.history.push('/Core');
+goCst = () => this.props.history.push('/Cst');
 
   render() {
     return (
@@ -28,6 +29,9 @@ goCore = () => this.props.history.push('/Core');
       <br/>
       <br/>
       <Button color="primary" variant="contained" onClick={this.goCore} >Core Synergistics</Button>
+      <br/>
+      <br/>
+      <Button color="primary" variant="contained" onClick={this.goCst} >Chest Shoulders Triceps</Button>
       </div>
     );
   }
