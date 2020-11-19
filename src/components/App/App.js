@@ -8,6 +8,7 @@ import Chest from './../Chest/Chest';
 import Shoulders from './../Shoulders/Shoulders';
 import Legs from './../Legs/Legs';
 import Core from './../Core/Core';
+import Cst from './../Cst/Cst';
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
         <Route exact path="/Shoulders" component={Shoulders}/>
         <Route exact path="/Legs" component={Legs}/>
         <Route exact path="/Core" component={Core}/>
+        <Route exact path="/Cst" component={Cst}/>
         
       </div>
       </Router>
