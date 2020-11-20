@@ -12,7 +12,7 @@ import Button from '@material-ui/core/Button';
 class Cst extends Component {
 
     componentDidMount(){
-        this.props.dispatch({type: 'GET_CHEST'})
+        this.props.dispatch({type: 'GET_CST'})
     }
     
     goHome =() => this.props.history.push('/')
