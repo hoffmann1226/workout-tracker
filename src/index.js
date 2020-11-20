@@ -69,6 +69,20 @@ function* getCore(){
   }
 }
 
+function* getCst(){
+  try{
+    let response = yield axios.get(`/core`);
+    console.log('in get cst saga', response.data)
+    yield put ({
+      type: 'SET_CST',
+      payload: response.data
+    })
+  }
+  catch(error){
+    console.log('problem with cst saga', error)
+  }
+}
+
 const sagaMiddleware = createSagaMiddleware();
 
 const chestReducer = (state = [], action) => {
