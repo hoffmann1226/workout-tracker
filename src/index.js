@@ -72,7 +72,7 @@ function* getCore(){
 
 function* getCst(){
   try{
-    let response = yield axios.get(`/core`);
+    let response = yield axios.get(`/cst`);
     console.log('in get cst saga', response.data)
     yield put ({
       type: 'SET_CST',

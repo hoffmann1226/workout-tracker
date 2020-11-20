@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     console.log ('in cst router')
-    const queryText = 'SELECT * FROM chest';
+    const queryText = 'SELECT * FROM cst';
     pool.query (queryText)
         .then((result) => { res.send(result.rows); })
         .catch((err) => {
