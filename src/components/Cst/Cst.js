@@ -31,9 +31,9 @@ class Cst extends Component {
                 </TableRow>
             </TableHead>
             <TableBody>
-                   {/* {this.props.cstReducer.map((item, index) => (
+                   {this.props.cstReducer.map((item, index) => (
                     <ExerciseItem key={index} item={item}/>
-                ))} */}
+                ))}
             </TableBody>
         </Table>
           <Button color="primary" variant="contained" onClick={this.goHome}>Go Back to Home</Button>
