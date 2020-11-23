@@ -12,10 +12,12 @@ import Button from '@material-ui/core/Button';
 
 class Chest extends Component {
 
+//trigger get saga when page loads to get exercise data on page.
 componentDidMount(){
     this.props.dispatch({type: 'GET_CHEST'})
 }
 
+//function for button to return to home page
 goHome =() => this.props.history.push('/')
 
   render() {
@@ -23,6 +25,7 @@ goHome =() => this.props.history.push('/')
       
       <div>
     <h3>Chest and Back</h3>
+    {/* table holding exercise data */}
     <Table>
         <TableHead>
             <TableRow>
@@ -32,6 +35,7 @@ goHome =() => this.props.history.push('/')
             </TableRow>
         </TableHead>
         <TableBody>
+              {/* mapping out the contents of the chest reducer brought over after component did mount */}
                {this.props.chestReducer.map((item, index) => (
                 <ExerciseItem key={index} item={item}/>
             ))}
