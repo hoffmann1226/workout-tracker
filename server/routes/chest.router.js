@@ -2,7 +2,7 @@ const express = require('express');
 const pool = require('../modules/pool');
 const router = express.Router();
 
-
+//get route for data
 router.get('/', (req, res) => {
     console.log('in chest router')
     const queryText = 'SELECT * FROM chest';

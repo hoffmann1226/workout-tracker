@@ -136,8 +136,10 @@ const cstReducer = (state = [], action) => {
 }
 
 //store instance and combine reducers
-const storeInstance = createStore(
-    combineReducers({
+const storeInstance = createStore
+  (
+    combineReducers
+    ({
       chestReducer,
       shouldersReducer,
       legsReducer,
