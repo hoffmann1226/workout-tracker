@@ -10,6 +10,7 @@ import Legs from './../Legs/Legs';
 import Core from './../Core/Core';
 import Cst from './../Cst/Cst';
 
+
 class App extends Component {
   render() {
     return (
@@ -18,6 +19,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Tom's Workout App</h1>
         </header>
+        {/* create application routes to all the components */}
         <br/>
         <Route exact path="/" component={Home}/>
         <Route exact path="/Chest" component={Chest}/>
