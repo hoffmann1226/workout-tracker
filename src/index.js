@@ -10,6 +10,7 @@ import createSagaMiddleware from 'redux-saga';
 import {takeEvery, put} from 'redux-saga/effects';
 import axios from 'axios';
 
+//create main saga
 function* rootSaga(){
   yield takeEvery('GET_CHEST', getChest)
   yield takeEvery('GET_SHOULDERS', getShoulders)
@@ -18,6 +19,7 @@ function* rootSaga(){
   yield takeEvery('GET_CST', getCst)
 };
 
+//create individual sagas for chest, shoulders, legs, core, cst
 function* getChest (){
   try{
     let response = yield axios.get(`/chest`)
@@ -86,6 +88,8 @@ function* getCst(){
 
 const sagaMiddleware = createSagaMiddleware();
 
+
+//create reducers for chest, shoulders, legs, core, cst
 const chestReducer = (state = [], action) => {
   switch (action.type) {
     case 'SET_CHEST':
