@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 class Home extends Component {
 
 
-//props.history takes user to next page
+//the home component consists of buttons and functions that take user to each individual workout page
 goChest =() => this.props.history.push('/Chest');
 goShoulders = () => this.props.history.push('/Shoulders');
 goLegs = () => this.props.history.push('/Legs');
