@@ -2,6 +2,7 @@ const express = require('express');
 const pool = require('../modules/pool');
 const router = express.Router();
 
+//get route for shoulders data
 router.get('/', (req, res) => {
     console.log('in shoulders router')
     const queryText = 'SELECT * FROM legs';
