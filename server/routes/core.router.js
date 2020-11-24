@@ -2,7 +2,7 @@ const express = require('express');
 const pool = require('../modules/pool');
 const router = express.Router();
 
-
+//get route for core data
 router.get('/', (req, res) => {
     console.log('in core router')
     const queryText = 'SELECT * FROM core';
