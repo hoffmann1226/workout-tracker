@@ -6,7 +6,8 @@ import TableRow from '@material-ui/core/TableRow';
 
 
 
-
+//reusable component for mapping out the exercise data for each exercise routine
+//uses props from parent component to fill up table
 
 class ExerciseItem extends Component {
 
