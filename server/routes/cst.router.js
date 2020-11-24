@@ -2,6 +2,7 @@ const express = require('express');
 const pool = require('../modules/pool');
 const router = express.Router();
 
+//get route for cst data
 router.get('/', (req, res) => {
     console.log ('in cst router')
     const queryText = 'SELECT * FROM cst';
