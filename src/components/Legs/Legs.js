@@ -11,10 +11,12 @@ import Button from '@material-ui/core/Button';
 
 class Legs extends Component {
 
+//trigger get saga when page loads to get exercise data on page.
 componentDidMount(){
   this.props.dispatch({type:'GET_LEGS'})
 }
 
+//function for button that takes user back to home page
 goHome =() => this.props.history.push('/')
 
   render() {
@@ -22,6 +24,7 @@ goHome =() => this.props.history.push('/')
       
       <div>
       <h3>Legs and Back</h3>
+      {/* table that holds exercise data */}
       <Table>
         <TableHead>
             <TableRow>
@@ -36,6 +39,7 @@ goHome =() => this.props.history.push('/')
             ))}
         </TableBody>
     </Table>
+    {/* function that takes user back to home page */}
       <Button color="primary" variant="contained" onClick={this.goHome}>Go Back to Home</Button>
       </div>
     );
