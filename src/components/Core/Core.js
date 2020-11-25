@@ -12,10 +12,12 @@ import Button from '@material-ui/core/Button';
 
 class Core extends Component {
 
+//trigger get saga when page loads to get exercise data on page.
 componentDidMount(){
     this.props.dispatch({type: 'GET_CORE'})
 }
 
+//function for the button to take the user back to the home page
 goHome =() => this.props.history.push('/')
 
   render() {
@@ -23,6 +25,7 @@ goHome =() => this.props.history.push('/')
       
       <div>
     <h3>Core Synergistics</h3>
+    {/* table holding exercise data */}
     <Table>
         <TableHead>
             <TableRow>
