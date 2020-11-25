@@ -11,10 +11,12 @@ import Button from '@material-ui/core/Button';
 
 class Cst extends Component {
 
+    //trigger get saga when page loads to get exercise data on page.
     componentDidMount(){
         this.props.dispatch({type: 'GET_CST'})
     }
     
+    //function for button that takes user back to the home page.
     goHome =() => this.props.history.push('/')
     
       render() {
@@ -22,6 +24,7 @@ class Cst extends Component {
           
           <div>
         <h3>Chest Shoulders Triceps</h3>
+        {/* table holding exercise data */}
         <Table>
             <TableHead>
                 <TableRow>
