@@ -3,6 +3,8 @@ import axios from 'axios';
 import './App.css';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import {connect} from 'react-redux';
+
+//import all the other components
 import Home from './../Home/Home';
 import Chest from './../Chest/Chest';
 import Shoulders from './../Shoulders/Shoulders';
